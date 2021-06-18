@@ -1,0 +1,20 @@
+
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+const MatchSmallCard = (props) => {
+
+    const { match, teamName } = props;
+    console.log('Match received into component ', match);
+   
+    const otherTeam = match.team1 === teamName ? match.team2 : match.team1;
+    return (
+       otherTeam && <div className="">
+           <h3>vs <Link to={`/teams/${otherTeam}`}>{otherTeam}</Link></h3>
+           <p>{match.matchWinner} won by {match.resultMargin} {match.result}</p>
+        </div>
+        
+    )
+}
+
+export default MatchSmallCard
