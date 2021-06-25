@@ -1,0 +1,23 @@
+.TeamPage {
+    .head {
+        height: 180px;  
+        margin-bottom: 15px;
+        .team-name {
+            font-size: 3.4rem;
+            font-weight: bold;
+        }
+    }
+    
+    .latest-matches-text {
+        font-size: 1.2rem;
+    }
+    .small-card {
+            padding-left: 0;
+            height: 120px;
+            .more {
+                color: #fff;
+                
+            }
+    }
+   
+}
